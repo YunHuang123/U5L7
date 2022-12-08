@@ -9,7 +9,6 @@ public class Temperature
     {
         highTemp = high;
         lowTemp = low;
-
         if (scale.equals("F") || scale.equals("C"))
         {
             tempScale = scale;

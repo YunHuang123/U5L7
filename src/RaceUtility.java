@@ -16,7 +16,8 @@ public class RaceUtility {
     {
         String words[] = str.split("\\s");
         String capitalizeWord = "";
-        for(String w:words){
+        for(String w:words)
+        {
             String first = w.substring(0,1);
             String s = w.substring(1);
             s = s.toLowerCase();
