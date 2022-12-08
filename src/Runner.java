@@ -1,53 +1,42 @@
 public class Runner {
     public static void main(String[] args) {
 
-        double high = 78.5;
-        double low = 54.6;
+        double miles1 = 13.85;
+        double km1 = 40;
+        System.out.println(RaceUtility.milesToKm(miles1));
+        System.out.println(RaceUtility.kmToMiles(km1));
 
-        // test constructors
-        Temperature temp1 = new Temperature(high, low, "F");
+        double miles2 = 26.42;
+        double km2 = 3.5;
+        System.out.println(RaceUtility.milesToKm(miles2));
+        System.out.println(RaceUtility.kmToMiles(km2));
 
-        System.out.println(temp1);
-        System.out.println("-----");
+        double miles3 = 5;
+        double km3 = 20.50;
+        System.out.println(RaceUtility.milesToKm(miles3));
+        System.out.println(RaceUtility.kmToMiles(km3));
 
-        Temperature temp2 = new Temperature(23.92, 14.95, "C");
+        double miles4 = 0;
+        double km4 = 0;
+        System.out.println(RaceUtility.milesToKm(miles4));
+        System.out.println(RaceUtility.kmToMiles(km4));
 
-        System.out.println(temp2);
-        System.out.println("-----");
+        String title = "welcome to the marathon!";
+        System.out.println(RaceUtility.makeProper(title));
 
-        // anything other than "C" or "F" defaults to "F"
-        Temperature temp3 = new Temperature(57.53, 38.65, "K");
+        title = "It's TIME for THE 5k!";
+        System.out.println(RaceUtility.makeProper(title));
 
-        System.out.println(temp3);
-        System.out.println("-----");
+        title = "runners, take your marks...";
+        System.out.println(RaceUtility.makeProper(title));
 
-        // --- test instance methods ---
+        title = "2 MILES TO GO!";
+        System.out.println(RaceUtility.makeProper(title));
 
-        // change to C
-        temp1.changeToC();
-        System.out.println(temp1);
-
-        // already C so do nothing:
-        temp1.changeToC();
-        System.out.println(temp1);
-        System.out.println("-----");
-
-        // change to F
-        temp1.changeToF();
-        System.out.println(temp1);
-
-        // already F so do nothing:
-        temp1.changeToF();
-        System.out.println(temp1);
-        System.out.println("-----");
-
-        // --- test static methods ---
-        double celciusTemp = Temperature.convertFtoC(78.5);
-        System.out.println(celciusTemp);
-
-        double fahrenheitTemp = Temperature.convertCtoF(12.6);
-        System.out.println(fahrenheitTemp);
+        title = "water break in 0.5 miles";
+        System.out.println(RaceUtility.makeProper(title));
 
 
     }
+
 }

@@ -58,7 +58,7 @@ public class Temperature
 
     private static double roundToNearestTenth(double num)
     {
-        num = Math.round(num);
+        num = Math.round(num * 10.0) / 10.0;
         return num;
     }
 
